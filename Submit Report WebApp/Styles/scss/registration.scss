@@ -1,0 +1,68 @@
+@import "Mixins";
+@import "Colors.scss";
+
+// * Body *
+body{
+   @include  animate_GradientBackground();
+    margin:auto;
+    max-width:1200px;
+    min-width:600px;
+    max-height:900px;
+    min-height:450px;
+    text-align:center; 
+}
+// * (Registration Form) *
+#registration-form{
+    input{
+        border-color: $purple_Heliotrope;
+        border-radius: 10px;
+    }
+    text-shadow: 2px 2px 2px  $blue_Black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 25px;
+    padding:25px;
+    margin:25px;
+    $darken_PinkWhite0: darken($pink_White0, 5%);
+    color:$darken_PinkWhite0;
+    #registration-title{
+        text-shadow: 2px 2px 2px $purple_periwinkle;
+        color:  $Black;
+        position: relative;
+        bottom:30px;
+    }
+    #btn-registration{
+        border-color: $green_LightAlgae;
+        border-radius: 15px;
+        margin-top: 30px;
+        font-size: 20px;
+        width:200px;
+        background-color: $Black;
+        color:$green_LightAlgae;
+        &:hover{
+            @include translateObject($green_Bright1); 
+        }
+    }
+    
+}// END
+
+// * (Registration Home Button) *
+#btn-registration-Home{
+    border-color:transparent;
+    border-radius: 15px;
+    width:300px;
+    height:50px;
+    margin-bottom: 50px;
+    
+    color:$blue_Turkish;
+    background-color:$Black;
+    font-size: 20px;
+    &:hover{
+        $darkenBlueTurkish: lighten($blue_Turkish,10%);
+        color:$darkenBlueTurkish;
+        border-color:  $purple_Piz;
+       
+    }
+    &:active{
+        @include transformObjectDown;
+    }
+}   

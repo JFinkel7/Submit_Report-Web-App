@@ -1,0 +1,42 @@
+@import "Colors.scss";
+
+// <*** For Testing ***>
+@mixin testBorder($color){
+    border: $color solid 4px;
+}
+//================================================
+@mixin defaultFontStyle($fontSize){
+    font-family: 'Times New Roman', Times, serif;
+    color:$purple_Lavender;
+    font-size: $fontSize;   
+}
+@mixin animate_GradientBackground() {
+    background: linear-gradient(218deg, #0e3141, #063f59, #044e70, #053349, #0f4057);
+    background-size: 1000% 1000%;
+    -webkit-animation: RegistrationBackground_DarkBlue 30s ease infinite;
+    -moz-animation: RegistrationBackground_DarkBlue 30s ease infinite;
+    animation: RegistrationBackground_DarkBlue 30s ease infinite;
+    @-webkit-keyframes RegistrationBackground_DarkBlue {
+        0%{background-position:0% 50%}
+        50%{background-position:100% 50%}
+        100%{background-position:0% 50%}
+    }
+    @-moz-keyframes RegistrationBackground_DarkBlue {
+        0%{background-position:0% 50%}
+        50%{background-position:100% 50%}
+        100%{background-position:0% 50%}
+    }
+    @keyframes RegistrationBackground_DarkBlue {
+        0%{background-position:0% 50%}
+        50%{background-position:100% 50%}
+        100%{background-position:0% 50%}
+    }  
+}
+@mixin translateObject($color) {
+    color:$color;
+    translate: all 2s ease-in 2s;
+}
+@mixin transformObjectDown{
+    transform: translate(3px);
+}
+

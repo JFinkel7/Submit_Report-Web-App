@@ -1,0 +1,61 @@
+@import "Mixins.scss";
+@import "Colors.scss";
+
+body{
+    margin:auto;
+    max-width:1200px;
+    min-width:600px;
+    max-height:950px;
+    min-height:450px;
+    text-align:center;  
+    overflow:hidden;
+}
+// * Header *
+#header-toolbar{
+    @include testBorder($White);
+    background-color: black;
+    position: relative;
+    height:100px;
+    padding:40px;
+    h1{
+        @include defaultFontStyle(45px);
+        color:$blue_TurquoiseDim;
+    }
+    #register-buttons{
+        position: absolute;
+        right:0px; 
+        bottom:0px;
+        .register-buttons{
+            $orange_WhiteDarken:darken($orange_White,20%);
+            color: $orange_WhiteDarken;
+            font-size: 25px;
+            margin:10px;
+            text-decoration: none;
+            background-color: transparent;
+            border:none;
+           &:hover{
+               color: $blue_Cerulean;
+           }
+        } 
+     }
+}
+
+// * Main *
+main{
+    margin:5px;
+    background-color: black;
+}
+
+// * Footer *
+#footer-toolbar{
+    @include testBorder($White);
+    @include defaultFontStyle(15px);
+    background-color: black;
+    padding:42px;
+    position: relative;
+    height:100px;
+}
+
+
+
+    

@@ -1,0 +1,72 @@
+body {
+  border-left: ridge 2px #000000;
+  border-right: ridge 2px #000000;
+  margin: auto;
+  max-width: 1200px;
+  min-width: 700px;
+  max-height: 900px;
+  min-height: 450px;
+  text-align: center;
+  overflow: hidden;
+}
+
+h1 {
+  padding: 25px;
+  font-family: "Times New Roman", Times, serif;
+  color: #E6E6FA;
+  font-size: 50px;
+  background-color: #000000;
+}
+
+h2 {
+  font-size: 40px;
+}
+
+nav {
+  padding: 25px;
+  font-size: 20px;
+  background-color: #000000;
+}
+nav a {
+  color: #89CFF0;
+  padding: 15px;
+  text-decoration: none;
+}
+
+textarea {
+  border: ridge 2px #101010;
+  font-weight: 900;
+  font-size: 25px;
+  padding: 25px;
+  margin: 25px;
+  text-orientation: sideways;
+}
+
+#btn-error-report, #btn-get-error-report {
+  border-radius: 2px;
+  color: #44d7a8;
+  background-color: #222021;
+}
+
+#inputBox-Ticket {
+  text-align: center;
+  padding: 10px;
+  margin: 15px;
+  font-size: 20px;
+  border-radius: 2px;
+  border-color: #44d7a8;
+  color: #ED2939;
+}
+
+#btn-error-report {
+  width: 200px;
+  height: 60px;
+}
+
+#btn-get-error-report {
+  margin-top: 10%;
+  width: 200px;
+  height: 60px;
+}
+
+/*# sourceMappingURL=report.css.map */

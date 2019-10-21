@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="keywords" content="HTML,CSS,SCSS,PHP,Javascript">
+        <meta name="description" content="?" >
+        <meta name="author" content="Denis J Finkel" >
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="../Styles/css/report.css">
+        <title>View Error Report</title>
+    </head>
+<body>
+    <header>
+        <h1>View Your Report Bug Error</h1>
+        <nav>
+            <a href="../index.html">Home</a>
+            <a href="report.html">Report Errors</a>
+        </nav>
+    </header>
+    <form action="userReports.html" method="POST" id="registration-form">
+        <div>
+            <h2>Enter Your Ticket Number</h2>
+            <input id="inputBox-Ticket" type="text" name="ticketInput" required/><br/>
+            <input id="btn-get-error-report" type="submit" value="See My Reports" name="submit"/>   
+        </div>
+        <div>
+            <?php require("../lib/getReport.php"); getReport('ticketInput')?>
+        </div> 
+    </form>
+</body>
+</html>

@@ -1,0 +1,69 @@
+@import "Mixins.scss";
+@import "Colors.scss";
+body{
+    border-left: ridge 2px $Black;
+    border-right:ridge 2px $Black; 
+    margin:auto;
+    max-width: 1200px;
+    min-width: 700px;
+    max-height: 900px;
+    min-height: 450px;
+    text-align: center;
+    overflow: hidden;
+}
+h1{
+    padding:25px;
+    @include defaultFontStyle(50px);
+    background-color: $Black;
+}
+h2{
+
+    font-size: 40px;
+}
+nav{
+    padding:25px;
+    font-size: 20px;
+    background-color: $Black;
+    a{  
+        color:  $blue_Baby;
+        padding:15px;
+        text-decoration: none;  
+    }
+
+
+}
+textarea{
+    border: ridge 2px $blackish1;
+    font-weight: 900;
+    font-size: 25px;
+    padding:25px;
+    margin:25px;
+    text-orientation: sideways;
+}
+#btn-error-report,#btn-get-error-report{
+    border-radius: 2px;
+    color:  $blue_Eucalyptus;
+    background-color:  $black_Charcoal;
+}
+#inputBox-Ticket{
+    text-align: center;
+    padding:10px;
+    margin:15px;
+    font-size: 20px;
+    border-radius: 2px;
+    border-color:$blue_Eucalyptus;
+    color: $red_Imperial;
+}
+//===================================================================
+// * reports HTML *
+#btn-error-report{
+    width:200px;
+    height:60px;
+}
+//===================================================================
+// * user Reports HTML *
+#btn-get-error-report{
+    margin-top: 10%;
+    width:200px;
+    height:60px;
+}

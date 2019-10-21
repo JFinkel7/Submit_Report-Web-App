@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="keywords" content="HTML,CSS,SCSS,PHP,Javascript">
+        <meta name="description" content="?" >
+        <meta name="author" content="Denis J Finkel" >
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="../Styles/css/report.css">
+        <title>Error Report</title>
+    </head>
+<body>
+    <header>
+        <h1>Report Your Bug Error</h1>
+        <nav>
+            <a href="../index.html">Home</a>
+            <a href="userReports.html">See My Reports</a>
+        </nav>
+     
+    </header>
+    <form action="report.html" method="POST" id="registration-form">
+        <?php require("../lib/setReport.php"); setReport('report')?>
+        <textarea  rows="8" cols="50" name="report"></textarea>
+        <div>
+            <input id="btn-error-report" type="submit" value="Report It" name="submit"/>   
+        </div> 
+    </form>
+    <div>       
+       
+    </div>
+</body>
+</html>
+  <!-- * <select>
+                <option value="Ticket1">Ticket 1</option>
+                <option value="Ticket2">Ticket 2</option>
+                <option value="Ticket3">Ticket 3</option>
+                <option value="Ticket4">Ticket 4</option>
+                <option value="Ticket5">Ticket 5</option>
+            </select>   -->

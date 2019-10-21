@@ -1,0 +1,57 @@
+body {
+  margin: auto;
+  max-width: 1200px;
+  min-width: 600px;
+  max-height: 950px;
+  min-height: 450px;
+  text-align: center;
+  overflow: hidden;
+}
+
+#header-toolbar {
+  border: #FFFFFF solid 4px;
+  background-color: black;
+  position: relative;
+  height: 100px;
+  padding: 40px;
+}
+#header-toolbar h1 {
+  font-family: "Times New Roman", Times, serif;
+  color: #E6E6FA;
+  font-size: 45px;
+  color: #81D8D0;
+}
+#header-toolbar #register-buttons {
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+}
+#header-toolbar #register-buttons .register-buttons {
+  color: #ffc581;
+  font-size: 25px;
+  margin: 10px;
+  text-decoration: none;
+  background-color: transparent;
+  border: none;
+}
+#header-toolbar #register-buttons .register-buttons:hover {
+  color: #007BA7;
+}
+
+main {
+  margin: 5px;
+  background-color: black;
+}
+
+#footer-toolbar {
+  border: #FFFFFF solid 4px;
+  font-family: "Times New Roman", Times, serif;
+  color: #E6E6FA;
+  font-size: 15px;
+  background-color: black;
+  padding: 42px;
+  position: relative;
+  height: 100px;
+}
+
+/*# sourceMappingURL=style.css.map */
